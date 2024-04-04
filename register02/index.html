@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-form">
+        <div class="container">
+            <div class="form-container">
+                <h1 class="heading">Register</h1>
+                <form onsubmit="return validateForm()">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                    <div id="usernameError" class="error"></div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email">
+                    <div id="emailError" class="error"></div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <div id="passwordError" class="error"></div>
+                    <label for="password2">Repeat Password</label>
+                    <input type="password" id="password2" placeholder="Enter password">
+                    <div id="password2Error" class="error"></div>
+                    <div class="button-container">
+                        <button type="submit">Login</button>
+                        <button type="submit">Register</button>
+                    </div>
+                    <div class="Login-btn">
+                        <a class="login-button" href="https://google.com"><img src="./images/GOOGLE.png" alt=""></a>
+                        <a class="login-button" href="https://facebook.com"><img src="./images/facebook.png" alt=""></a>
+                        <a class="login-button" href="https://microsoft.com"><img src="./images/microsoft.png"
+                                alt=""></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
